@@ -1,7 +1,6 @@
+ @import '../../global.scss';
+
 .intro {
-    display: grid;
-    position: relative;
-    overflow: hidden;
 
     .intro__img-wrapper {
         width: 100%;
@@ -34,5 +33,9 @@
         bottom: 50%;
         font-size: 40px;
         max-width: 800px;
+
+        .banner__title {
+            font-family: $ffSecondary;
+        }
     }
 }

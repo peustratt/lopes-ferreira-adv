@@ -2,7 +2,7 @@ import './intro.scss'
 
 function Intro() {
     return (
-        <div className="intro">
+        <div className="intro" id="intro">
             <div className="intro__img-wrapper">
                 {/* <img className='intro__img' src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Ponte_estaiada_da_Via_Mangue_-_Recife%2C_Pernambuco%2C_Brasil.jpg/1024px-Ponte_estaiada_da_Via_Mangue_-_Recife%2C_Pernambuco%2C_Brasil.jpg" alt="" /> */}
 

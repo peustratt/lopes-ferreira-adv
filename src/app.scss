@@ -3,14 +3,15 @@
 
     .sections {
         width: 100%;
-        height: calc(100vh - 140px);
+        height: calc(100vh - 130px);
         position: relative;
-        top: 140px;
+        top: 130px;
         scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
 
         > *{
             width: 100vw;
-            height: calc(100vh - 140px);
+            height: calc(100vh - 130px);
             scroll-snap-align: start;
         }
     }
