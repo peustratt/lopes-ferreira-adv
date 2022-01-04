@@ -1,3 +1,67 @@
+@import '../../global.scss';
+
 .atuacao{
-    background-color: red;
+    background: $grayColor;
+
+    .content-wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        font-family: $ffSecondary;
+
+        .atuacao__title {
+            font-size: 32px;
+            padding-top: 2em;
+            text-align: center;
+            font-family: inherit;
+
+            &::after {
+                content: "";
+                display: block;
+                width: 100px;
+                height: 4px;
+                background: $secondaryColor;
+                opacity: .5;
+                margin: 1em auto;
+            }
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.2em;
+            font-family: inherit;
+            padding: 2em;
+
+            .card{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-family: inherit;
+                min-width: 230px;
+                min-height: 230px;
+                border-radius: 10px;
+                background: #fff;
+                box-shadow: $boxShadow;
+                transition: all 1s ease;
+
+                .card__icon {
+                    font-size: 75px;
+                    color: $secondaryColor;
+                }
+
+                .card__title{
+                    font-family: inherit;
+                    font-size: 20px;
+                    margin-top: 10px;
+                }
+
+                &:hover {
+                    transform: scale(1.07);
+                }
+            }
+        }
+    }
 }
