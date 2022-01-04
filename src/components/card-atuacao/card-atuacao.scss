@@ -1,0 +1,32 @@
+
+@import '../../global.scss';
+
+.card-atuacao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: inherit;
+    min-width: 230px;
+    min-height: 230px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: $boxShadow;
+    transition: all 1s ease;
+
+    .card__icon {
+        font-size: 75px;
+        color: $secondaryColor;
+    }
+
+    .card__title{
+        text-transform: capitalize;
+        font-family: inherit;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    &:hover {
+        transform: scale(1.07);
+    }
+}

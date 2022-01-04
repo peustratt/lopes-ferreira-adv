@@ -1,41 +1,42 @@
 import './atuacao.scss'
-import {AccountBalanceTwoTone} from '@material-ui/icons/';
+import {AccountBalanceTwoTone, WhatsApp, Work, Gavel, MonetizationOn} from '@material-ui/icons/';
+import CardAtuacao from '../card-atuacao/CardAtuacao';
 
+const cardsData = [
+    {
+        id: 1,
+        icon: AccountBalanceTwoTone,
+        title: "tributário"
+    },
+    {
+        id: 2,
+        icon: MonetizationOn,
+        title: "empresárial"
+    },
+    {
+        id: 3,
+        icon: Gavel,
+        title: "trabalhista"
+    },
+    {
+        id: 4,
+        icon: Work,
+        title: "internacional"
+    }
+
+]
 
 function Atuacao() {
+    const cardsJSX = cardsData.map((card) => {
+        return <CardAtuacao key={card.id} icon={card.icon} title={card.title} />
+    })
+
     return (
         <div className='atuacao'>
             <div className="content-wrapper">
                 <h2 className="atuacao__title">Atuação</h2>
                 <ul className="cards">
-                    <li className="card">
-                        <AccountBalanceTwoTone className="card__icon"/>
-                        <h3 className="card__title">Tributário</h3>
-                    </li>
-                    <li className="card">
-                        <AccountBalanceTwoTone className="card__icon"/>
-                        <h3 className="card__title">Tributário</h3>
-                    </li>
-                    <li className="card">
-                        <AccountBalanceTwoTone className="card__icon"/>
-                        <h3 className="card__title">Tributário</h3>
-                    </li>
-                    <li className="card">
-                        <AccountBalanceTwoTone className="card__icon"/>
-                        <h3 className="card__title">Tributário</h3>
-                    </li>
-                    <li className="card">
-                        <AccountBalanceTwoTone className="card__icon"/>
-                        <h3 className="card__title">Tributário</h3>
-                    </li>
-                    <li className="card">
-                        <AccountBalanceTwoTone className="card__icon"/>
-                        <h3 className="card__title">Tributário</h3>
-                    </li>
-                    <li className="card">
-                        <AccountBalanceTwoTone className="card__icon"/>
-                        <h3 className="card__title">Tributário</h3>
-                    </li>
+                    {cardsJSX}
                 </ul>
             </div>
         </div>
