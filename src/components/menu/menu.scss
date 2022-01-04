@@ -3,7 +3,7 @@
 .menu {
     width: 300px;
     height: calc(100vh - 130px);
-    background-color: $mainColor;
+    background-color: #fff;
     position: fixed;
     top: 130px;
     right: 0;
@@ -17,12 +17,17 @@
 
     &.active{
         transform: translateX(0%);
+        background: $mainColor;
+        
+        ul{
+            color: #fff;
+        }
     }
 
     ul {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         font-weight: 300;
-        color: #fff;
+        color: $mainColor;
         list-style: none;
         width: 60%;
 

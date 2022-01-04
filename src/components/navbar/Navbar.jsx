@@ -33,9 +33,15 @@ function Navbar(props) {
             <div className={"nav__bottom " + (props.menuOpen && "active")}>
                 <div className="content-wrapper">
 
-                    <div className="img-wrapper">
-                        <a href="#intro"><img src="https://lopesferreira.adv.br/wp-content/uploads/2020/09/cropped-cropped-cropped-LOGO-BRANCA-LF.png" alt="" /></a>
-                    </div>
+                    <a className="logo-link" href="#intro">
+                        <div className="logo-wrapper">
+                            <span className="line"></span>
+                            <p className="logo__title">Lopes Ferreira</p>
+                            <span className="line"></span>
+                            <p className="logo__subtitle">Advocacia especializada</p>
+                            
+                        </div>
+                    </a>
 
                     <ul className="nav__list">
                         <li className="nav__item"><a href="#intro" className="nav__link">Inicio</a></li>
