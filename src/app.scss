@@ -1,3 +1,5 @@
+@import './global.scss';
+
 .app {
     height: 100vh;
 
@@ -14,5 +16,22 @@
             height: calc(100vh - 130px);
             scroll-snap-align: start;
         }
+    }
+
+    .whats-icon {
+        font-size: 45px;
+        position: fixed;
+        right: 30px;
+        bottom: 10px;
+        color: #25D366;
+        // background-color: #25D366;
+        border-radius: 50%;
+        z-index: 1;
+        overflow: visible;
+
+        @media screen and (max-width: 600px) {
+            right: 10px;
+        }
+
     }
 }
