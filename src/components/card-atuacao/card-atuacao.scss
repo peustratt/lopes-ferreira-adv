@@ -16,15 +16,15 @@
     transition: all 1s ease;
 
     .card__icon {
-        font-size: 75px;
+        font-size: 80px;
         color: $secondaryColor;
     }
 
     .card__title{
         text-transform: capitalize;
         font-family: inherit;
-        font-size: 20px;
-        margin-top: 10px;
+        font-size: 25px;
+        margin-top: 1em;
     }
 
     &:hover {

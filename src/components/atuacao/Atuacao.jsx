@@ -11,7 +11,7 @@ const cardsData = [
     {
         id: 2,
         icon: MonetizationOn,
-        title: "empresárial"
+        title: "empresarial"
     },
     {
         id: 3,
@@ -32,7 +32,7 @@ function Atuacao() {
     })
 
     return (
-        <div className='atuacao'>
+        <div className='atuacao' id="atuacao">
             <div className="content-wrapper">
                 <h2 className="atuacao__title">Atuação</h2>
                 <ul className="cards">

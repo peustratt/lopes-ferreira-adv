@@ -9,7 +9,7 @@ function Menu(props) {
                     <a href="#intro" className="nav__link" onClick={() => props.setMenuOpen(false)}>Inicio</a>
                 </li>
                 <li className="nav__item">
-                    <a href="#" className="nav__link" onClick={() => props.setMenuOpen(false)}>Atuação</a>
+                    <a href="#atuacao" className="nav__link" onClick={() => props.setMenuOpen(false)}>Atuação</a>
                 </li>
                 <li className="nav__item">
                     <a href="#" className="nav__link" onClick={() => props.setMenuOpen(false)}>Equipe</a>

@@ -29,6 +29,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 1.2em;
+            justify-content: center;
             font-family: inherit;
             padding: 2em 4em;
         }
