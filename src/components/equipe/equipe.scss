@@ -10,7 +10,7 @@
         color: $whiteColor;
         font-size: 32px;
         font-weight: 400;
-        padding-top: 2em;
+        padding-top: 1em;
         text-align: center;
         font-family: inherit;
         &::after {
@@ -26,14 +26,14 @@
     
     .equipe__cards {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
+        grid-template-columns: repeat(auto-fit, minmax(100px, 240px));
         gap: 1.2em;
         justify-content: center;
         align-items: center;
         font-family: inherit;
         padding: 2em 4em;
         grid-auto-flow: dense;
-        
+
         .equipe__card {
             width: 100%;
             height: fit-content;
