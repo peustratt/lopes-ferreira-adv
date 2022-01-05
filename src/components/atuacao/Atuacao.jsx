@@ -1,5 +1,5 @@
 import './atuacao.scss'
-import {AccountBalanceTwoTone, WhatsApp, Work, Gavel, MonetizationOn} from '@material-ui/icons/';
+import {AccountBalanceTwoTone, Work, Gavel, MonetizationOn} from '@material-ui/icons/';
 import CardAtuacao from '../card-atuacao/CardAtuacao';
 
 const cardsData = [
