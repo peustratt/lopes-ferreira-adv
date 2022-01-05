@@ -1,6 +1,7 @@
 // Variables
 $mainColor: #1a2451;
 $mainDarkColor: #666;
+$blackColor: #3a3a3a;
 $grayColor:#ececec;
 $whiteColor: #fff;
 $secondaryColor: #ffbd4a;
@@ -28,3 +29,8 @@ img {
     display: block;
     max-width: 100%;
 }
+
+h2, h3 {
+    color: $blackColor;
+}
+

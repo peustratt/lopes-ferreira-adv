@@ -13,7 +13,7 @@ function Navbar(props) {
                             <MailOutlineRounded className='icon' />
                             <h6 className='icon-title'>contato@lopesferreira.adv.br</h6>
                         </div>
-                        <div className="nav__text-wrapper">
+                        <div className="nav__text-wrapper que-some">
                             <Room className='icon' />
                             <h6 className='icon-title'>Recife/PE</h6>
                         </div>

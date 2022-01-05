@@ -5,22 +5,22 @@ import CardAtuacao from '../card-atuacao/CardAtuacao';
 const cardsData = [
     {
         id: 1,
-        icon: AccountBalanceTwoTone,
+        Icon: AccountBalanceTwoTone,
         title: "tributário"
     },
     {
         id: 2,
-        icon: MonetizationOn,
+        Icon: MonetizationOn,
         title: "empresarial"
     },
     {
         id: 3,
-        icon: Gavel,
+        Icon: Gavel,
         title: "trabalhista"
     },
     {
         id: 4,
-        icon: Work,
+        Icon: Work,
         title: "internacional"
     }
 
@@ -28,17 +28,17 @@ const cardsData = [
 
 function Atuacao() {
     const cardsJSX = cardsData.map((card) => {
-        return <CardAtuacao key={card.id} icon={card.icon} title={card.title} />
+        return <CardAtuacao key={card.id} Icon={card.Icon} title={card.title} />
     })
 
     return (
         <div className='atuacao' id="atuacao">
-            <div className="content-wrapper">
+
                 <h2 className="atuacao__title">Atuação</h2>
                 <ul className="cards">
                     {cardsJSX}
                 </ul>
-            </div>
+                
         </div>
     )
 }
