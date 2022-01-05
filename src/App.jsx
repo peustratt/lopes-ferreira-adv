@@ -1,11 +1,12 @@
 import React from 'react';
-import './app.scss'
+import './app.scss';
 import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 import Navbar from './components/navbar/Navbar';
 import Intro from './components/intro/Intro';
 import Atuacao from './components/atuacao/Atuacao';
-import Menu from './components/menu/Menu'
+import Menu from './components/menu/Menu';
 import Equipe from './components/equipe/Equipe';
+import Sobre from './components/sobre/Sobre';
 
 function App() {
     const [menuOpen, setMenuOpen] = React.useState(false)
@@ -19,6 +20,7 @@ function App() {
             <Intro />
             <Atuacao />
             <Equipe />
+            <Sobre />
         </section>
     </main>
     );
