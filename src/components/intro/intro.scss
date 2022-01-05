@@ -1,18 +1,20 @@
  @import '../../global.scss';
 
 .intro {
-
+    padding: 0 calc((100vw - 1200px)/2);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     .intro__img-wrapper {
-        width: 100%;
-        height: 100%;
+        position: absolute;
+        inset: 0;
         overflow: hidden;
         background-color: rgba(0, 0, 0, .8);
-        animation: zoom 25s;
     }
 
     @keyframes zoom {
         0% {
-            transform: scale(1.2);
+            transform: scale(1.3);
         }
         100% {
             transform: scale(1);
@@ -24,19 +26,18 @@
         height: 100%;
         object-fit: cover;
         opacity: .5;
+        animation: zoom 25s;
     }
     
     .banner {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
+        position: relative;
+        padding-left: 10px;
+        width: 100%;
+        max-width: 700px;
+        word-wrap: break-word;
         color: #fff;
         font-size: 40px;
-        max-width: 800px;
-        display: flex;
-        align-items: center;
+       
 
         .banner__title {
             font-family: $ffSecondary;
