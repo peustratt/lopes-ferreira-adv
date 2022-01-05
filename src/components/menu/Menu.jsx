@@ -12,16 +12,16 @@ function Menu(props) {
                     <a href="#atuacao" className="nav__link" onClick={() => props.setMenuOpen(false)}>Atuação</a>
                 </li>
                 <li className="nav__item">
-                    <a href="#" className="nav__link" onClick={() => props.setMenuOpen(false)}>Equipe</a>
+                    <a href="#equipe" className="nav__link" onClick={() => props.setMenuOpen(false)}>Equipe</a>
                 </li>
                 <li className="nav__item">
-                    <a href="#" className="nav__link" onClick={() => props.setMenuOpen(false)}>Sobre</a>
+                    <a href="#sobre" className="nav__link" onClick={() => props.setMenuOpen(false)}>Sobre</a>
                 </li>
                 <li className="nav__item">
-                    <a href="#" className="nav__link" onClick={() => props.setMenuOpen(false)}>Blog</a>
+                    <a href="#equipe" className="nav__link" onClick={() => props.setMenuOpen(false)}>Blog</a>
                 </li>
                 <li className="nav__item">
-                    <a href="#" className="nav__link" onClick={() => props.setMenuOpen(false)}>Contato</a>
+                    <a href="#contato" className="nav__link" onClick={() => props.setMenuOpen(false)}>Contato</a>
                 </li>
             </ul>
         </div>

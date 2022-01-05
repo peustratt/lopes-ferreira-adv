@@ -46,10 +46,10 @@ function Navbar(props) {
                     <ul className="nav__list">
                         <li className="nav__item"><a href="#intro" className="nav__link">Inicio</a></li>
                         <li className="nav__item"><a href="#atuacao" className="nav__link">Atuação</a></li>
-                        <li className="nav__item"><a href="" className="nav__link">Equipe</a></li>
-                        <li className="nav__item"><a href="" className="nav__link">Sobre</a></li>
-                        <li className="nav__item"><a href="" className="nav__link">Blog</a></li>
-                        <li className="nav__item"><a href="" className="nav__link">Contato</a></li>
+                        <li className="nav__item"><a href="#equipe" className="nav__link">Equipe</a></li>
+                        <li className="nav__item"><a href="#sobre" className="nav__link">Sobre</a></li>
+                        <li className="nav__item"><a href="#blog" className="nav__link">Blog</a></li>
+                        <li className="nav__item"><a href="#contato" className="nav__link">Contato</a></li>
                     </ul>
 
                     <div className="hamburger" onClick={() => {
