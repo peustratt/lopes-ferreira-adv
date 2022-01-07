@@ -1,14 +1,16 @@
 @import './global.scss';
 
 .app {
-    height: 100vh;
+    height: fit-content;
+    overflow: hidden;
+    position: absolute;
+    top: 130px;
 
     .sections {
         width: 100%;
-        height: calc(100vh - 130px);
         position: relative;
-        top: 130px;
-        scroll-snap-type: y mandatory;
+        // top: 130px;
+        // scroll-snap-type: y mandatory;
         scroll-behavior: smooth;
 
         @media screen and (max-height: 500px) {
@@ -17,10 +19,10 @@
         }
 
         > *{
-            width: 100vw;
-            height: calc(100vh - 130px);
-            scroll-snap-align: start;
-            padding: 0 calc((100vw - 1200px)/2);
+            width: 100%;
+            // height: calc(100vh - 130px);
+            // scroll-snap-align: start;
+            padding: 2em calc((100vw - 1200px)/2);
 
             @media screen and (max-height: 500px) {
                 height: calc(100vh - 70px);
