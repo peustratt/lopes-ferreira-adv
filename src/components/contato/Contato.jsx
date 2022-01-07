@@ -1,5 +1,6 @@
 import React from 'react'
 import './contato.scss'
+import Endereco from '../endereco/Endereco'
 
 function Contato() {
     return (
@@ -15,11 +16,11 @@ function Contato() {
                     <h4 className='form__title'>Envie-nos um email</h4>
                     <div className="input-grid">
                         <div className="input-box-wrapper">
-                            <label for="nome">Digite seu nome:</label>
+                            <label for="nome">Nome:</label>
                             <input type="text" placeholder='Nome' id='nome' name="nome" />
                         </div>
                         <div className="input-box-wrapper">
-                            <label for="email">Digite seu email:</label>
+                            <label for="email">Email:</label>
                             <input type="email" placeholder='seu@email.com' id="email" name="email" />
                         </div>
                     </div>
@@ -29,6 +30,8 @@ function Contato() {
                     <button className="form-btn" type='submit'>Enviar</button>
                 </form>
             </div>
+            <Endereco />
+
         </div>
     )
 }
