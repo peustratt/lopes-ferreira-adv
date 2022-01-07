@@ -5,6 +5,9 @@
     overflow: hidden;
     position: absolute;
     top: 130px;
+    @media screen and (max-height: 500px) {
+        top: 70px
+    }
 
     .sections {
         width: 100%;
