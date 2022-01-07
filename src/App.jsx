@@ -9,6 +9,7 @@ import Equipe from './components/equipe/Equipe';
 import Sobre from './components/sobre/Sobre';
 import Contato from './components/contato/Contato';
 import Endereco from './components/endereco/Endereco';
+import Footer from './components/footer/Footer';
 
 function App() {
     const [menuOpen, setMenuOpen] = React.useState(false)
@@ -25,6 +26,7 @@ function App() {
             <Sobre />
             <Contato />
             <Endereco />
+            <Footer />
         </section>
     </main>
     );

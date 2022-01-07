@@ -93,7 +93,7 @@
                 font-size: 1.2em;
                 font-weight: 400;
                 margin: 0 auto;
-                width: 250px;
+                width: 220px;
                 height: 40px;
                 border-radius: 5px;
                 background: $mainColor;
@@ -102,7 +102,7 @@
                 transition: .5s all ease;
                 border: 0;
                 &:hover {
-                    background: rgba(2, 132, 159, 1);
+                    background: $secondaryColor;
                     opacity: .8;
                 }
             }
