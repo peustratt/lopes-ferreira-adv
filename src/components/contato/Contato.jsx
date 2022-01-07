@@ -3,7 +3,7 @@ import './contato.scss'
 
 function Contato() {
     return (
-        <div className='contato'>
+        <div className='contato' id="contato">
             <h2 className='contato__title'>Contato</h2>
             <div className='contato__content'>
                 <div className="body-text">

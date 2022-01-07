@@ -20,7 +20,7 @@
     }
     .contato__content {
         display: grid;
-        padding: 2em;
+        padding: 1em 2em;
         gap: 1em;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         // >* {
@@ -28,7 +28,7 @@
         // }
         .body-text {
             color: $whiteColor;
-            padding: 1em 1em 2em 0;
+            padding: 0 1em 2em 0;
             .text__title {
                 color: inherit;
                 font-size: clamp(2rem, 3.5vw, 3.5rem);
