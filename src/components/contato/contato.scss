@@ -1,8 +1,8 @@
 @import '../../global.scss';
 .contato {
-    background: $mainColor;
+    background: rgb(250, 250, 250);
     .contato__title {
-        color: $whiteColor;
+        color: $blackColor;
         font-size: 32px;
         font-weight: 400;
         padding-top: 1em;
@@ -27,7 +27,7 @@
         //     aspect-ratio: 1;
         // }
         .body-text {
-            color: $whiteColor;
+            color: $blackColor;
             padding: 0 1em 2em 0;
             .text__title {
                 color: inherit;
