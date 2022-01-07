@@ -7,6 +7,7 @@ import Atuacao from './components/atuacao/Atuacao';
 import Menu from './components/menu/Menu';
 import Equipe from './components/equipe/Equipe';
 import Sobre from './components/sobre/Sobre';
+import Contato from './components/contato/Contato';
 
 function App() {
     const [menuOpen, setMenuOpen] = React.useState(false)
@@ -21,6 +22,7 @@ function App() {
             <Atuacao />
             <Equipe />
             <Sobre />
+            <Contato />
         </section>
     </main>
     );
