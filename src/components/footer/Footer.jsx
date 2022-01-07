@@ -4,7 +4,14 @@ import './footer.scss'
 function Footer() {
     return (
         <footer className='footer' id="footer">
-            
+            <div className="logo-wrapper">
+                <img src="./images/logo-lopes-ferreira.png" alt="" className="footer__logo" />
+            </div>
+            <div className="powered-wrapper">
+                <a href="https://github.com/peustratt" className="footer__powered">Powered by peustrat-dev</a>
+                <i class="devicon-github-original"></i>
+            </div>
+
         </footer>
     )
 }
