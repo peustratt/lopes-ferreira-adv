@@ -1,5 +1,5 @@
 import React from 'react'
-import { Room, MailOutlineRounded, CallRounded, Instagram, Facebook, LinkedIn } from '@material-ui/icons';
+import {MailOutlineRounded, CallRounded, Instagram, Facebook, LinkedIn } from '@material-ui/icons';
 import './endereco.scss'
 
 function Endereco() {
@@ -12,10 +12,6 @@ function Endereco() {
                     <div className="body__text-wrapper">
                         <MailOutlineRounded className='icon' />
                         <h6 className='icon-title'>contato@lopesferreira.adv.br</h6>
-                    </div>
-                    <div className="body__text-wrapper que-some">
-                        <Room className='icon' />
-                        <h6 className='icon-title'>Recife/PE</h6>
                     </div>
                     <div className="body__text-wrapper">
                         <CallRounded className='icon' />
