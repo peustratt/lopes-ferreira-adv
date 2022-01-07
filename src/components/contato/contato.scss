@@ -62,7 +62,7 @@
             .input-grid {
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-                gap: .3em;
+                gap: .7em;
                 .input-box-wrapper {
                     margin-top: .5em;
                     label {
