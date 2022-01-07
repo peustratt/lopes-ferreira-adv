@@ -15,7 +15,7 @@
     transform: translateX(100%);
     transition: all 1s ease;
 
-    @media screen and (max-height: 700px) {
+    @media screen and (max-height: 500px) {
         height: calc(100vh - 70px);
         top: 70px;
     }

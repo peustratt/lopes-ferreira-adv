@@ -10,7 +10,7 @@
     .nav__top {
         height: 60px;
         background-color: $mainColor;
-        @media screen and (max-height: 700px){
+        @media screen and (max-height: 500px){
             display: none;
         }
 

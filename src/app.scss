@@ -11,7 +11,7 @@
         scroll-snap-type: y mandatory;
         scroll-behavior: smooth;
 
-        @media screen and (max-height: 700px) {
+        @media screen and (max-height: 500px) {
             height: calc(100vh - 70px);
             top: 70px
         }
@@ -22,7 +22,7 @@
             scroll-snap-align: start;
             padding: 0 calc((100vw - 1200px)/2);
 
-            @media screen and (max-height: 700px) {
+            @media screen and (max-height: 500px) {
                 height: calc(100vh - 70px);
             }
         }
