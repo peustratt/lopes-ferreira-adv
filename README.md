@@ -1,7 +1,7 @@
 # lopes-ferreira-adv
 <h2>A portfolio page for a lawfirm<h2>
 <p>Created with ReactJS</p>
- <a href="https://lopes-ferreira-adv.netlify.app/">🔗 Link</a>
+ <a href="https://lopes-ferreira-adv.netlify.app/">🔗 Link <-- </a>
 
 <div>
   <h3>🛠️ Used tecnologies</h3>
