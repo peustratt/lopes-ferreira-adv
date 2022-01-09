@@ -16,6 +16,7 @@
     border-radius: 2px;
     animation: expand .5s;
     padding: 1em;
+    border: 3px $secondaryColor solid;
 
     @keyframes expand {
         0% {
@@ -31,7 +32,7 @@
     .modal__title {
         text-align: center;
         text-transform: capitalize;
-        font-family: $secondaryColor;
+        font-family: $ffSecondary;
 
         &::after {
             content: "";

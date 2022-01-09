@@ -28,7 +28,7 @@ function App() {
                 }
             )
         )
-    },[currentCardId])
+    },[currentCardId, cards])
 
     let selectedCard = {}
     for (let card of cards) {
