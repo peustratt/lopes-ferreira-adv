@@ -7,7 +7,8 @@ $lightGrayColor: rgb(250, 250, 250);
 $whiteColor: #fff;
 $secondaryColor: #ffbd4a;
 $ffSecondary: 'Playfair Display', serif;
-$boxShadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25), 0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
+// $boxShadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25), 0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
+$boxShadow: rgba(79, 114, 205, 0.15) 0px 4px 24px 0px;
 
 *,
 *::before,

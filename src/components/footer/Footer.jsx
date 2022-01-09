@@ -8,7 +8,7 @@ function Footer() {
                 <img src="./images/logo-lopes-ferreira.png" alt="" className="footer__logo" />
             </div>
             <div className="powered-wrapper">
-                <a href="https://github.com/peustratt" className="footer__powered">Powered by peustrat-dev</a>
+                <a href="https://github.com/peustratt" className="footer__powered">Powered by peustratt-dev</a>
                 <i class="devicon-github-original"></i>
             </div>
 
