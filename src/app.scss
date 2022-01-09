@@ -52,4 +52,12 @@
         }
 
     }
+
+    .fundo {
+        position: fixed;
+        background-color: $mainColor;
+        inset: 0;
+        opacity: .7;
+        z-index: 5;
+    }
 }
