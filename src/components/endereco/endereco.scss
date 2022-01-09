@@ -3,22 +3,20 @@
     background: $mainColor;
     color: $whiteColor;
     display: grid;
-    padding: 1em 2em;
     gap: 1em;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     border-radius: 2px;
-
-    .endereco__body{
+    .endereco__body {
         display: flex;
         flex-direction: column;
         gap: .5em;
-
-        .endereco-title{
+        padding-left: 1em;
+        padding-right: 1em;
+        .endereco-title {
             color: inherit;
             text-align: center;
             font-family: $ffSecondary;
             font-size: 1.3em;
-
             &::after {
                 content: "";
                 display: block;
@@ -29,10 +27,9 @@
                 margin: 1em auto;
             }
         }
-
-        .endereco__grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, 200px);
+        .endereco__box {
+            display: flex;
+            flex-wrap: wrap;
             gap: .5em;
             justify-content: center;
             .body__text-wrapper {
@@ -41,28 +38,33 @@
                 gap: .3em;
             }
         }
-
         .endereco-adress {
             margin-top: 1em;
             text-align: center;
         }
-        
         .icons-title {
             color: inherit;
             text-align: center;
             margin-top: 1em;
         }
-
         .icons-wrapper {
             display: flex;
             font-size: 30px;
             margin: .5em auto;
             gap: 1em;
-
             >.icon {
                 font-size: inherit;
             }
         }
     }
-
+    .map-wrapper {
+        width: 100%;
+        padding-right: 1em;
+        padding-left: 1em;
+    }
+    .endereco__map iframe {
+        width: 95%;
+        padding-right: 1em;
+        padding-left: 1em;
+    }
 }

@@ -1,8 +1,10 @@
  @import '../../global.scss';
 
 .intro {
+    height: calc(100vh - 130px);
     padding: 0 calc((100vw - 1200px)/2);
     display: flex;
+    position: relative;
     justify-content: flex-end;
     align-items: center;
     .intro__img-wrapper {

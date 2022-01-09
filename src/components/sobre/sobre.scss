@@ -7,7 +7,6 @@
         color: $blackColor;
         font-size: 32px;
         font-weight: 400;
-        padding-top: 1em;
         text-align: center;
         font-family: $ffSecondary;
         &::after {
@@ -15,7 +14,7 @@
             display: block;
             width: 100px;
             height: 4px;
-            background: $mainColor;
+            background: $secondaryColor;
             opacity: .5;
             margin: 1em auto;
         }

@@ -5,7 +5,8 @@
     position: fixed;
     top: 0;
     z-index: 3;
-    box-shadow: 0.25em 0.25em 0.25em rgba(0, 0, 0, .20);
+    // box-shadow: 0.25em 0.25em 0.25em rgba(0, 0, 0, .20);
+    box-shadow: rgba(79, 114, 205, 0.15) 0px 4px 24px 0px;
 
     .nav__top {
         height: 60px;

@@ -1,0 +1,51 @@
+@import '../../global.scss';
+
+.modal {
+    background: $lightGrayColor;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: left top;
+    min-width: 250px;
+    width: 70%;
+    max-width: 800px;
+    min-height: 300px;
+    z-index: 6;
+    box-shadow: $boxShadow;
+    border-radius: 2px;
+    animation: expand .5s;
+    padding: 1em;
+
+    @keyframes expand {
+        0% {
+            transform:scale(0) translate(-50%, -50%);
+
+        }
+        100% {
+            transform: scale(1) translate(-50%, -50%);
+        }
+    }
+
+
+    .modal__title {
+        text-align: center;
+        text-transform: capitalize;
+        font-family: $secondaryColor;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 100px;
+            height: 4px;
+            background: $secondaryColor;
+            opacity: .5;
+            margin: .4em auto 0;
+        }
+    }
+
+    .modal__body {
+        padding: 1em 0;
+    }
+}
+

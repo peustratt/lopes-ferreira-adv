@@ -28,7 +28,9 @@ function Menu(props) {
                     href={item.link}
                     className='nav__link'
                     onClick={() => props.setMenuOpen(false)}
+                    key={item.name}
                 >   {item.name}
+                   
                 </a>
             </li>
         )

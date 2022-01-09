@@ -1,6 +1,5 @@
 import React from 'react'
 import './contato.scss'
-import Endereco from '../endereco/Endereco'
 
 function Contato() {
     return (
@@ -30,8 +29,6 @@ function Contato() {
                     <button className="form-btn" type='submit'>Enviar</button>
                 </form>
             </div>
-            <Endereco />
-
         </div>
     )
 }
