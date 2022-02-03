@@ -23,17 +23,17 @@ const navData = [
 function Menu(props) {
     const navListJSX = navData.map((item) => {
         return (
-            <li className="nav__item">
+            <li className="nav__item" key={item.name}>
                 <a
                     href={item.link}
-                    className='nav__link'
+                    className="nav__link"
                     onClick={() => props.setMenuOpen(false)}
-                    key={item.name}
-                >   {item.name}
-                   
+                >
+                    {" "}
+                    {item.name}
                 </a>
             </li>
-        )
+        );
     })
 
     return (
