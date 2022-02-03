@@ -9,7 +9,7 @@ function Footer() {
             </div>
             <div className="powered-wrapper">
                 <a href="https://github.com/peustratt" className="footer__powered">Powered by peustratt-dev</a>
-                <i class="devicon-github-original"></i>
+                <i className="devicon-github-original"></i>
             </div>
 
         </footer>

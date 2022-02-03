@@ -15,11 +15,11 @@ function Contato() {
                     <h4 className='form__title'>Envie-nos um email</h4>
                     <div className="input-grid">
                         <div className="input-box-wrapper">
-                            <label for="nome">Nome:</label>
+                            <label htmlFor="nome">Nome:</label>
                             <input type="text" placeholder='Nome' id='nome' name="nome" />
                         </div>
                         <div className="input-box-wrapper">
-                            <label for="email">Email:</label>
+                            <label htmlFor="email">Email:</label>
                             <input type="email" placeholder='seu@email.com' id="email" name="email" />
                         </div>
                     </div>

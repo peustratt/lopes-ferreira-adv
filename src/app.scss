@@ -12,24 +12,11 @@
     .sections {
         width: 100%;
         position: relative;
-        // top: 130px;
-        // scroll-snap-type: y mandatory;
         scroll-behavior: smooth;
-
-        @media screen and (max-height: 500px) {
-            height: calc(100vh - 70px);
-            top: 70px
-        }
 
         > *{
             width: 100%;
-            // height: calc(100vh - 130px);
-            // scroll-snap-align: start;
             padding: 2em calc((100vw - 1200px)/2);
-
-            @media screen and (max-height: 500px) {
-                height: calc(100vh - 70px);
-            }
         }
     }
 
@@ -51,13 +38,5 @@
             bottom: 8px;
         }
 
-    }
-
-    .fundo {
-        position: fixed;
-        background-color: $mainColor;
-        inset: 0;
-        opacity: .7;
-        z-index: 5;
     }
 }
