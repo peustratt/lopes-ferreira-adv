@@ -63,7 +63,7 @@ function Atuacao() {
             <CardAtuacao
                 key={card.id}
                 id={card.id}
-                Icon={card.Icon}
+                icon={card.icon}
                 title={card.title}
                 currentCardId={currentCardId}
                 setCurrentCardId={setCurrentCardId}
