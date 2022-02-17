@@ -1,5 +1,23 @@
 import styled from 'styled-components';
 
+export default function CardAtuacao({title, icon, currentCardId, setCurrentCardId, id, setSelectedCard}) {
+    function handleClick() {
+        if (id === currentCardId) {
+            setCurrentCardId(0)
+            setSelectedCard(null)
+        } else {
+            setCurrentCardId(id)
+        }
+    }
+
+    return (
+        <ListItem className="card-atuacao" onClick={handleClick}>
+            <i className={"card__icon " + icon}></i>
+            <h3 className="card__title">{title}</h3>
+        </ListItem>
+    );
+}
+
 const ListItem = styled.li`
     display: flex;
     flex-direction: column;
@@ -12,7 +30,7 @@ const ListItem = styled.li`
     box-shadow: ${(props) => props.theme.shadows.main};
 
     .card__icon {
-        font-size: 80px;
+        font-size: 60px;
         color: ${(props) => props.theme.colors.secondary};
     }
 
@@ -28,23 +46,3 @@ const ListItem = styled.li`
         transform: scale(1.02);
     }
 `;
-
-function CardAtuacao({title, Icon, currentCardId, setCurrentCardId, id, setSelectedCard}) {
-    function handleClick() {
-        if (id === currentCardId) {
-            setCurrentCardId(0)
-            setSelectedCard(null)
-        } else {
-            setCurrentCardId(id)
-        }
-    }
-
-    return (
-        <ListItem className="card-atuacao" onClick={handleClick}>
-            <Icon className="card__icon" />
-            <h3 className="card__title">{title}</h3>
-        </ListItem>
-    )
-}
-
-export default CardAtuacao

@@ -1,4 +1,3 @@
-import { Room, MailOutlineRounded, CallRounded, Instagram, Facebook, LinkedIn,} from "@material-ui/icons";
 import styled from 'styled-components'
 
 const Container = styled.nav`
@@ -235,26 +234,26 @@ export default function Navbar(props) {
                 <div className="nav-content">
                     <div className="nav__text-grid">
                         <div className="nav__text-wrapper">
-                            <MailOutlineRounded className="icon" />
+                            <i className="icon fa-regular fa-envelope"></i>
                             <h6 className="icon-title">
                                 contato@lopesferreira.adv.br
                             </h6>
                         </div>
                         <div className="nav__text-wrapper que-some">
-                            <Room className="icon" />
+                            <i className="icon fa-solid fa-location-dot"></i>
                             <h6 className="icon-title">Recife/PE</h6>
                         </div>
                         <div className="nav__text-wrapper">
-                            <CallRounded className="icon" />
+                            <i className="icon fa-solid fa-square-phone"></i>
                             <h6 className="icon-title">
                                 (81) 9.9670-4863 / 9.9291-8315
                             </h6>
                         </div>
                     </div>
                     <div className="icons-wrapper">
-                        <Instagram className="icon" />
-                        <LinkedIn className="icon" />
-                        <Facebook className="icon" />
+                        <i className="icon fa-brands fa-instagram"></i>
+                        <i className="icon fa-brands fa-linkedin"></i>
+                        <i className="icon fa-brands fa-facebook-square"></i>
                     </div>
                 </div>
             </div>
