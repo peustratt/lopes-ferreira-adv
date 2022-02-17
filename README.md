@@ -1,5 +1,5 @@
 # lopes-ferreira-adv
-##A portfolio page for a lawfirm
+## A portfolio page for a lawfirm
 Created with ReactJS
 - Link para a aplicação no [Netlify](https://lopes-ferreira.netlify.app/)
 
