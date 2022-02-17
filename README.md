@@ -1,7 +1,7 @@
 # lopes-ferreira-adv
 <h2>A portfolio page for a lawfirm<h2>
 <p>Created with ReactJS</p>
-🔗 - Link para a aplicação no [Netlify](https://lopes-ferreira.netlify.app/)
+- Link para a aplicação no [Netlify](https://lopes-ferreira.netlify.app/)
 
 <div>
   <h3>🛠️ Used tecnologies</h3>
