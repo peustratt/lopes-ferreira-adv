@@ -2,6 +2,7 @@ import Head from "next/head";
 import { useState } from 'react'
 import { Navbar, Intro, Atuacao, Equipe, Sobre, Contato, Endereco, Footer, Menu } from '../components';
 import styled from "styled-components";
+// import GoogleMaps from "../components/GoogleMaps";
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -23,10 +24,12 @@ export default function Home() {
       </Head>
       <Container className='app'>
         <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-        <i className="whats-icon fa-brands fa-whatsapp"></i> 
+        <div className="icon-bg">
+          <i className="whats-icon fab fa-whatsapp"></i> 
+        </div>
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <section className="sections">
-          <Intro />
+          <Intro /> 
           <Atuacao />
           <Equipe />
           <Sobre />
@@ -59,24 +62,31 @@ const Container = styled.main`
             padding: 2em calc((100vw - 1200px)/2);
         }
     }
+    
+    .icon-bg {
+      width: 75px;
+      height: 75px;
+      position: fixed;
+      right: 30px;
+      bottom: 20px;
+      background: #25D366;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
 
-    .whats-icon {
-        font-size: 60px;
-        position: fixed;
-        right: 30px;
-        bottom: 20px;
-        color: ${props => props.theme.colors.white};
-        background: #25D366;
-        padding: 8px;
-        border-radius: 50%;
-        z-index: 1;
-        overflow: visible;
-
-        @media (max-width: 600px) {
-            font-size: 50px;
+      @media (max-width: 600px) {
             right: 8px;
             bottom: 8px;
         }
+    }
 
+    .whats-icon {
+        position: relative;
+        text-align: center;
+        font-size: 3.39em;
+        color: ${props => props.theme.colors.white};
+        z-index: 1;
+        overflow: visible;
     }
 `;
