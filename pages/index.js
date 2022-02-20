@@ -86,7 +86,7 @@ const Container = styled.main`
         text-align: center;
         font-size: 3.39em;
         color: ${props => props.theme.colors.white};
-        z-index: 1;
+        z-index: 30;
         overflow: visible;
     }
 `;
