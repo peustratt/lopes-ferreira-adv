@@ -69,6 +69,7 @@ const Container = styled.main`
       position: fixed;
       right: 30px;
       bottom: 20px;
+      z-index: 2;
       background: #25D366;
       display: flex;
       align-items: center;

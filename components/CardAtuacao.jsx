@@ -25,8 +25,9 @@ const ListItem = styled.li`
     align-items: center;
     font-family: inherit;
     padding: 3em 0;
-    background: #fff;
+    /* background: #fff; */
     transition: all 0.5s ease;
+    border: 2px solid ${props => props.theme.colors.secondary};
     box-shadow: ${(props) => props.theme.shadows.main};
 
     .card__icon {
