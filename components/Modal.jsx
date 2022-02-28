@@ -8,13 +8,11 @@ const Container = styled.div`
     transform: translate(-50%, -50%);
     transform-origin: left top;
     max-width: 800px;
-    width: fit-content;
-    min-height: 300px;
+    /* overflow: auto; */
     z-index: 6;
     box-shadow: ${(props) => props.theme.shadows.main};
     border-radius: 2px;
     animation: expand 0.5s;
-    padding: 1em;
     border: 3px ${(props) => props.theme.colors.secondary} solid;
 
     @keyframes expand {
@@ -26,24 +24,32 @@ const Container = styled.div`
         }
     }
 
-    .modal__title {
-        text-align: center;
-        text-transform: capitalize;
-        font-family: ${(props) => props.theme.font.secondary};
+    > div {
+        position: relative;
+        padding: 2em;
+        width: 100%;
+        display: grid;
+        gap: 1em;
 
-        &::after {
-            content: "";
-            display: block;
-            width: 100px;
-            height: 4px;
-            background: ${(props) => props.theme.colors.secondary};
-            opacity: 0.5;
-            margin: 0.4em auto 0;
+        .modal__title {
+            text-align: center;
+            text-transform: capitalize;
+            font-family: ${(props) => props.theme.font.secondary};
+
+            &::after {
+                content: "";
+                display: block;
+                width: 100px;
+                height: 4px;
+                background: ${(props) => props.theme.colors.secondary};
+                opacity: 0.5;
+                margin: 0.4em auto 0;
+            }
         }
-    }
 
-    .modal__body {
-        padding: 1em 0;
+        .modal__text {
+            font-size: 1em;
+        }
     }
 `;
 
@@ -55,8 +61,10 @@ function Modal({selectedCard, setCurrentCardId, setSelectedCard}) {
 
     return (
         <Container className='modal' onClick={handleModalClick}>
-            <h2 className='modal__title'>{selectedCard.title}</h2>
-            <p className='modal__body'>{selectedCard.content}</p>
+            <div>
+                <h2 className='modal__title'>{selectedCard.title}</h2>
+                <p className='modal__text'>{selectedCard.content}</p>
+            </div>
         </Container>
     )
 }

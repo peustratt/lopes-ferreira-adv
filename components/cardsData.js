@@ -21,7 +21,7 @@ const cardsData = [
         id: 4,
         icon: "fa-solid fa-suitcase-rolling",
         title: "internacional",
-        content: "~~~~~~psum dolor sit amet consectetur adipisicing elit. Corrupti beatae porro nulla, praesentium omnis libero fugit officiis totam sunt ea laboriosam reprehenderit quod! Accusantium earum, eligendi amet repellat quibusdam ipsam asperiores magni dolores, consectetur sint saepe labore perferendis nemo a delectus consequatur hic, dolore nihil magnam? Ut inventore quasi deserunt."
+        content: "Ipsum dolor sit amet consectetur adipisicing elit. Corrupti beatae porro nulla, praesentium omnis libero fugit officiis totam sunt ea laboriosam reprehenderit quod! Accusantium earum, eligendi amet repellat quibusdam ipsam asperiores magni dolores, consectetur sint saepe labore perferendis nemo a delectus consequatur hic, dolore nihil magnam? Ut inventore quasi deserunt."
     }
 ]
 
