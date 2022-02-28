@@ -8,7 +8,9 @@ const Container = styled.div`
     transform: translate(-50%, -50%);
     transform-origin: left top;
     max-width: 800px;
-    /* overflow: auto; */
+    width: 100%;
+    max-height: 90vh;
+    overflow: auto;
     z-index: 6;
     box-shadow: ${(props) => props.theme.shadows.main};
     border-radius: 2px;
@@ -24,31 +26,38 @@ const Container = styled.div`
         }
     }
 
-    > div {
-        position: relative;
-        padding: 2em;
+    .modal-wrapper {
         width: 100%;
-        display: grid;
-        gap: 1em;
+        height: 100%;
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
+        gap: .5em;
 
-        .modal__title {
-            text-align: center;
-            text-transform: capitalize;
-            font-family: ${(props) => props.theme.font.secondary};
+        .title-wrapper {
+            display: flex;
+            gap: 1em;
+            justify-content: center;
+            padding-bottom: 9px;
+            .modal__title {
+                text-align: center;
+                text-transform: capitalize;
+                font-family: ${(props) => props.theme.font.secondary};
 
-            &::after {
-                content: "";
-                display: block;
-                width: 100px;
-                height: 4px;
-                background: ${(props) => props.theme.colors.secondary};
-                opacity: 0.5;
-                margin: 0.4em auto 0;
+                &::after {
+                    content: "";
+                    display: block;
+                    width: 100px;
+                    height: 4px;
+                    background: ${(props) => props.theme.colors.secondary};
+                    opacity: 0.5;
+                    margin: 5px auto 0;
+                }
             }
         }
 
         .modal__text {
-            font-size: 1em;
+            line-height: 1.4;
         }
     }
 `;
@@ -60,13 +69,17 @@ function Modal({selectedCard, setCurrentCardId, setSelectedCard}) {
     }
 
     return (
-        <Container className='modal' onClick={handleModalClick}>
-            <div>
-                <h2 className='modal__title'>{selectedCard.title}</h2>
-                <p className='modal__text'>{selectedCard.content}</p>
-            </div>
-        </Container>
-    )
+        <div>
+            <Container className="modal" onClick={handleModalClick}>
+                <div className="modal-wrapper">
+                    <div className="title-wrapper">
+                        <h2 className="modal__title">{selectedCard.title}</h2>
+                    </div>
+                    <p className="modal__text">{selectedCard.content}</p>
+                </div>
+            </Container>
+        </div>
+    );
 }
 
 export default Modal
