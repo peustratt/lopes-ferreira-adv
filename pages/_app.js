@@ -78,10 +78,11 @@ h3 {
 
 #fundo {
     position: fixed;
-    background-color: ${theme.colors.main};
+    /* background-color: ${theme.colors.main}; */
+    background-color: rgba(26, 36, 81, 0.3);
     inset: 0;
-    opacity: 0.7;
     z-index: 5;
+    backdrop-filter: blur(10px);
 }
 
 ::-webkit-scrollbar {

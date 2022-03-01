@@ -1,11 +1,19 @@
 import Head from "next/head";
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Navbar, Intro, Atuacao, Equipe, Sobre, Contato, Endereco, Footer, Menu } from '../components';
 import styled from "styled-components";
+import useWindowDimensions from "../hooks/useWindowDimensions";
 // import GoogleMaps from "../components/GoogleMaps";
 
 export default function Home() {
-  const [menuOpen, setMenuOpen] = useState(false)
+  const [menuOpen, setMenuOpen] = useState(() => false)
+  const { height, width } = useWindowDimensions();
+
+  useEffect(() => {
+    if (width > 900) {
+      setMenuOpen(false);
+    }
+  }, [width]);
 
   return (
     <>
@@ -38,7 +46,6 @@ export default function Home() {
           <Footer />
         </section>
       </Container>
-    
     </>
   );
 }

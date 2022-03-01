@@ -7,7 +7,7 @@ const Container = styled.div`
     top: 50%;
     transform: translate(-50%, -50%);
     transform-origin: left top;
-    max-width: 800px;
+    max-width: 700px;
     width: 100%;
     max-height: 90vh;
     overflow: auto;
