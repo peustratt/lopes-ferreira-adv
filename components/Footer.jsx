@@ -12,6 +12,11 @@ const Container = styled.footer`
         align-items: center;
         height: 100%;
         padding: 0 40px;
+
+        @media (max-width: 500px) {
+            padding: 0 1rem;
+        }
+        
         .logo-wrapper {
             width: 60px;
             height: 60px;
