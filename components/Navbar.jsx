@@ -58,7 +58,7 @@ const Container = styled.nav`
                     gap: 3px;
 
                     .icon {
-                        font-size: 20px;
+                        font-size: 19px;
                     }
                 }
             }
@@ -104,7 +104,7 @@ const Container = styled.nav`
                     font-weight: 700;
                     color: ${(props) => props.theme.colors.main};
                     text-transform: uppercase;
-                    width: 161px;
+                    width: 155px;
                     height: 100%;
                     overflow: hidden;
                     position: relative;
@@ -122,7 +122,7 @@ const Container = styled.nav`
 
                     .logo__title {
                         font-family: inherit;
-                        font-size: 15px;
+                        font-size: 14px;
                         margin: 6px 0 5px;
                         padding: 0;
                     }
@@ -130,7 +130,7 @@ const Container = styled.nav`
                     .logo__subtitle {
                         margin-top: 5px;
                         font-family: inherit;
-                        font-size: 8.5px;
+                        font-size: 8px;
                     }
                 }
             }
